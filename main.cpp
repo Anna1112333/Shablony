@@ -7,10 +7,12 @@ int main(){
     SetConsoleCP(CP_UTF8);
     SetConsoleOutputCP(CP_UTF8);
     setvbuf(stdout, nullptr, _IOFBF, 1000);
+    setlocale(LC_ALL, "Rus");
     pqxx::connection("host=127.0.0.1 port=5432 "
         "dbname=Shablony user=Shablony password=anna");
     SqlSelectQueryBuilder query_builder;
-    for(int i=0; i++;i<5)
+    for (int i = 0; i<5; i++)
+    //    std::cout << "один" << std::endl;
     query_builder.add();
 
    /* query_builder.AddColumn("name").AddColumn("phone");
