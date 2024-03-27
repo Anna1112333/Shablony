@@ -6,9 +6,10 @@ class SqlSelectQueryBuilder {
 	public:
 		int a=0;
 		void add();
-	/*SqlSelectQueryBuilder* table;
+		std::string query[4] = { "select ", "from ",  "where ", ";" };
+	//SqlSelectQueryBuilder* table;
 	SqlSelectQueryBuilder& AddColumn(std::string);
 	SqlSelectQueryBuilder& AddFrom(std::string);
 	SqlSelectQueryBuilder& AddWhere(std::string, std::string);
-	 bool BuildQuery() const;*/
+	// bool BuildQuery() const;
 };
