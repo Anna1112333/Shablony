@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10) #версия cmake
+cmake_minimum_required(VERSION 3.22.0) #версия cmake
 
 project(Shablony)  #название проекта
 set(PostgreSQL_ADDITIONAL_VERSIONS "15")

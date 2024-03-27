@@ -1,10 +1,14 @@
+#pragma once
+#include <pqxx/pqxx>
 #include <iostream>
 
 class SqlSelectQueryBuilder {
 	public:
-	SqlSelectQueryBuilder* table;
+		int a=0;
+		void add();
+	/*SqlSelectQueryBuilder* table;
 	SqlSelectQueryBuilder& AddColumn(std::string);
 	SqlSelectQueryBuilder& AddFrom(std::string);
 	SqlSelectQueryBuilder& AddWhere(std::string, std::string);
-	const bool BuildQuery();
+	 bool BuildQuery() const;*/
 };
