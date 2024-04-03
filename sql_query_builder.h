@@ -4,12 +4,14 @@
 
 class SqlSelectQueryBuilder {
 	public:
+		std::string query0 = "";
 		int a=0;
 		void add();
-		std::string query[4] = { "select ", "from ",  "where ", ";" };
-	//SqlSelectQueryBuilder* table;
+		bool query_point[3] = { false, false, false };
+	std::string query[4] = { "select ", "from ",  "where ", ";" };
+	
 	SqlSelectQueryBuilder& AddColumn(std::string);
 	SqlSelectQueryBuilder& AddFrom(std::string);
 	SqlSelectQueryBuilder& AddWhere(std::string, std::string);
-	// bool BuildQuery() const;
+	std::string BuildQuery();
 };
